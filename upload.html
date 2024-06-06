@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMKM Insight - Tanjung Pinang</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="" class="logo">
+        <img src="img/logo.png" alt="logo" width="30px" />
+        <div class="logo-name">
+          <span class="umkm">UMKM</span>
+          <span class="insight">Insight</span>
+        </div>
+      </a>
+      <input type="checkbox" id="toggler" />
+      <label for="toggler">
+        <img src="img/bars.svg" alt="menu" width="20px" />
+      </label>
+      <div class="menu">
+        <ul class="list">
+          <li><a href="akun.html">Profil</a></li>
+          <li><a href="upload.html">Upload</a></li>
+        </ul>
+      </div>
+      <div class="button-section">
+        <a class="btn btn-register" href="index.html" onclick="confirmLogout()">Logout</a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Start -->
+    <section id="home">
+      <div class="banner">
+        <div class="container">
+          <h1>Upload</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Home End -->
+
+    <!-- Form Profil -->
+    <section id="profil"">
+        <div class="container">
+            <div class="">
+                <div class="base-form">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <p>Pendaftaran Usaha</p>
+                        <label for="nama">Nama Usaha <span class="required-star">*</span></label>
+                        <input required type="text"  id="nama" name="nama" placeholder="" value="" />
+
+                        <label for="jenis-usaha">Jenis Usaha <span class="required-star">*</span></label>
+                        <select name="jenis-usaha" id="jenis-usaha">
+                            <option value="">Pakaian</option>
+                            <option value="">Kuliner</option>
+                            <option value="">Aksesoris</option>
+                            <option value="">Kerajinan</option>
+                        </select>
+
+                        <label for="alamat">Alamat <span class="required-star">*</span></label>
+                        <input required type="text"  id="alamat" name="alamat" placeholder="" value="" />
+
+                        <label for="deskripsi">Deskripsi Usaha <span class="required-star">*</span></label>
+                        <textarea name="deskripsi" id="deskripsi" cols="30" rows="5"></textarea>
+
+                        <p>Data Pemilik</p>
+                        <label for="nama">Nama Pemilik <span class="required-star">*</span></label>
+                        <input required type="text"  id="nama" name="nama" placeholder="" value="" />
+
+                        <label for="nik">NIK <span class="required-star">*</span></label>
+                        <input required type="number"  id="nik" name="nik" placeholder="" value="" />
+
+                        <label for="foto-ktp">Foto KTP <span class="required-star">*</span></label><br>
+                        <input type="file" id="foto-ktp" name="foto-ktp" accept=".pdf" required>
+                        <small class="caption">File harus dalam format PDF</small>
+
+                        <a href="akun.html" class="btn btn-back" onclick="confirmSend()">Kirim</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+      function confirmSend() {
+        if (confirm("Anda yakin ingin mengirim data?")) {
+          window.location.href = "akun.html";
+        }
+      }
+    </script>
+  </body>
+</html>

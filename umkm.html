@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMKM Insight - Tanjung Pinang</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="logo" width="30px" />
+        <div class="logo-name">
+          <span class="umkm">UMKM</span>
+          <span class="insight">Insight</span>
+        </div>
+      </a>
+      <input type="checkbox" id="toggler" />
+      <label for="toggler">
+        <img src="img/bars.svg" alt="menu" width="20px" />
+      </label>
+      <div class="menu">
+        <ul class="list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="umkm.html">UMKM</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="index.html#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="button-section">
+        <div class="search-bar">
+          <img src="img/search.png" alt="search" width="15px" />
+          <input type="text" name="text" class="input" id="input" placeholder="Cari" />
+        </div>
+        <a class="btn btn-register" href="register.html">Daftar</a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Start -->
+    <section id="home">
+      <div class="banner">
+        <div class="container">
+          <h1>UMKM KAMI</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Home End -->
+
+    <!-- UMKM Start -->
+    <section id="recommendation">
+      <div class="container">
+        <h2>Daftar UMKM yang Tersedia</h2>
+        <div class="recommendation-cards">
+          <div class="card">
+            <img src="img/BaleBale.jpg" alt="UMKM Image" />
+            <div class="card-content">
+              <h3>Warung Bale - Bale</h3>
+              <p><span class="rating">&#9733;</span> 4.0</p>
+              <div class="tags">
+                <button class="btn btn-tag">Kuliner</button>
+                <a class="btn btn-detail" href="umkm1.html">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/AyamPekek.jpg" alt="UMKM Image" />
+            <div class="card-content">
+              <h3>Ayam Pekek</h3>
+              <p><span class="rating">&#9733;</span> 4.2</p>
+              <div class="tags">
+                <button class="btn btn-tag">Kuliner</button>
+                <a class="btn btn-detail" href="umkm2.html">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/SateBahagia.jpg" alt="UMKM Image" />
+            <div class="card-content">
+              <h3>Sate Bahagia Indah Batu 9</h3>
+              <p><span class="rating">&#9733;</span> 4.5</p>
+              <div class="tags">
+                <button class="btn btn-tag">Kuliner</button>
+                <a class="btn btn-detail" href="umkm3.html">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- UMKM End -->
+
+    <!-- Tabel Data UMKM -->
+    <section id="umkm-tabel">
+      <div class="container">
+        <div class="umkm-tabel">
+          <div class="tabel-info">
+            <img src="img/filter.png" alt="filter" width="30px" height="30px"/>
+            <div class="search-bar">
+              <img src="img/search.png" alt="search" width="15px" />
+              <input type="text" name="text" class="input" id="input" placeholder="Cari" />
+            </div>
+          </div>
+          <div style="overflow-x: auto">
+            <table>
+              <tr>
+                <th>No.</th>
+                <th>Nama Pemilik</th>
+                <th>Nama Usaha</th>
+                <th>Kategori</th>
+                <th>Alamat</th>
+                <th>Kontak</th>
+                <th>Info</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Vina</td>
+                <td>Warung Bale-Bale</td>
+                <td>Kuliner</td>
+                <td>Jl. Raya Dompak, Batu IX, Kec. Tanjungpinang</td>
+                <td>balebalevina@gmail.com</td>
+                <td><a href="umkm1.html">Lihat</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Linda</td>
+                <td>Ayam Pekek</td>
+                <td>Kuliner</td>
+                <td>Jl. Raja H. Fisabililah Tanjungpinang</td>
+                <td>ayampekek_@gmail.com</td>
+                <td><a href="umkm2.html">Lihat</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Pegi</td>
+                <td>Sate Bahagia Indah Batu 9</td>
+                <td>Kuliner</td>
+                <td>Jl. D.i. Panjaitan Km 9, Kota Tanjung Pinang</td>
+                <td>Satebahagia.9@gmail.com</td>
+                <td><a href="umkm3.html">Lihat</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Gemi</td>
+                <td>Pink Ladies</td>
+                <td>Aksesoris</td>
+                <td>Jl. D.I. Panjaitan Km.9 - Seberang KFC dan Pinang Paleo - Samping Bank CCB.</td>
+                <td>Pinkladies_@gmail.com</td>
+                <td><a href="umkm4.html">Lihat</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Jamari</td>
+                <td>Warung Bale-Bale</td>
+                <td>Pakaian</td>
+                <td>Jl. Cendrawasih, Kec. Tanjungpinang</td>
+                <td>DiffThrift@gmail.com</td>
+                <td><a href="umkm5.html">Lihat</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Khalid</td>
+                <td>VK Parfum Store</td>
+                <td>Aksesoris</td>
+                <td>Jl. D.I. Panjaitan, Batu IX, Kec. Tanjungpinang</td>
+                <td>VK_parfum@gmail.com</td>
+                <td><a href="umkm6.html">Lihat</a></td>
+              </tr>
+            </table>
+            <div class="pagination">
+              <a href="" class="active">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer id="contact">
+      <div class="container">
+        <h2>Mari Terhubung</h2>
+        <div class="footer-content">
+          <div class="footer-image">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <div class="footer-address">
+            <h3>Alamat</h3>
+            <p>Tanjung Pinang</p>
+            <p>Kepulauan Riau</p>
+            <p>Indonesia</p>
+          </div>
+          <div class="footer-contact">
+            <h3>Kontak</h3>
+            <p>082210101010</p>
+            <p>umkm.insight@gmail.com</p>
+          </div>
+          <div class="footer-sosmed">
+            <h3>Ikuti Kami</h3>
+            <a href="https://www.instagram.com/umkminsight" target="_blank">@umkm.insight</a><br />
+            <a href="https://www.youtube.com/@UmkmInsight" target="_blank">youtube.com/umkminsight</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
